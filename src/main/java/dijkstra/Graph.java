@@ -6,4 +6,10 @@ public interface Graph {
 
     public void printNodes();
 
+    public Node getNodeByName(String name);
+
+    public boolean contains(Node node);
+
+    public long getDistanceToNode(Node node);
+
 }

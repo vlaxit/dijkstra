@@ -13,9 +13,9 @@ public class Route {
 
     private City from;
     private City to;
-    private double cost;
+    private int cost;
 
-    public Route (City from, City to, double cost) {
+    public Route (City from, City to, int cost) {
         this.from = from;
         this.to = to;
         this.cost = cost;

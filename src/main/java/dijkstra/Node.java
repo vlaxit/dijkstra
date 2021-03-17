@@ -5,18 +5,20 @@ import java.util.Map;
 
 public interface Node {
 
-    public void addDestination(Node destination, Number distance);
+    void addDestination(Node destination, long distance);
 
-    public void setDistance(Number distance);
+    void setDistance(long distance);
 
-    public Number getDistance();
+    long getDistance();
 
-    public Map<Node, Number> getAdjacentNodes();
+    Map<Node, Long> getAdjacentNodes();
 
-    public List<Node> getShortestPath();
+    List<Node> getShortestPath();
 
-    public void setShortestPath(List<Node> shortestPath);
+    void setShortestPath(List<Node> shortestPath);
 
-    public String getName();
+    String getName();
+
+    void printShortestPath();
 
 }
